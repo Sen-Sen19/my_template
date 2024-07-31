@@ -5,6 +5,10 @@
   .card-shadow {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: black;
+  }
 </style>
 
 <div class="content-wrapper">

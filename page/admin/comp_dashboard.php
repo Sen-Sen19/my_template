@@ -54,7 +54,7 @@ $results = $_SESSION['results'];
             <div id="chart"></div>
         </div>
         <div class="button-container mt-4">
-            <a href="index.php" class="btn btn-secondary btn-custom">Back</a>
+            <a href="computation.php" class="btn btn-secondary btn-custom">Back</a>
           
         </div>
     </div>
