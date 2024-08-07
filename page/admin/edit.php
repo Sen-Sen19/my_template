@@ -78,7 +78,7 @@
         <form id="editForm">
           <div class="form-group">
             <label for="editEmployeeNo">Employee No</label>
-            <input type="text" class="form-control" id="editEmployeeNo" name="EmployeeNo" readonly>
+            <input type="text" class="form-control" id="editEmployeeNo" name="EmployeeNo" >
           </div>
           <div class="form-group">
             <label for="editUsername">Username</label>

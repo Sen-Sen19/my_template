@@ -12,7 +12,11 @@
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
             <li class="breadcrumb-item"><a href="view.php">Home</a></li>
-            <li class="breadcrumb-item active">Display</li>
+            <li class="breadcrumb-item active" id="mainTableBreadcrumb">Display</li>
+            <li class="breadcrumb-item" id="detailTableBreadcrumb" style="display: none;">
+              <a href="#" id="backToMainTable" style="color: #007bff;">Return</a> / 
+              <span id="employeeFullName" style="color: #6e6f75;"></span>
+            </li>
           </ol>
         </div>
       </div>
@@ -42,18 +46,24 @@
               </div>
               <div class="row">
                 <div class="col-sm-12">
-                  <table class="table table-bordered table-hover">
+                  <table class="table table-bordered table-hover" id="mainTable">
                     <thead>
                       <tr>
                         <th>Employee No</th>
                         <th>Username</th>
                         <th>Full Name</th>
+                      </tr>
+                    </thead>
+                    <tbody id="employeeTableBody"></tbody>
+                  </table>
+                  <table class="table table-bordered table-hover" id="detailTable" style="display: none;">
+                    <thead>
+                      <tr>
                         <th>Section</th>
                         <th>User Type</th>
                       </tr>
                     </thead>
-                    <tbody id="employeeTableBody">
-                    </tbody>
+                    <tbody id="detailTableBody"></tbody>
                   </table>
                 </div>
               </div>
@@ -73,21 +83,53 @@
       tbody.innerHTML = '';
       data.forEach(row => {
         const tr = document.createElement('tr');
-        tr.innerHTML = `
-          <td>${row.EmployeeNo}</td>
+        tr.innerHTML = 
+          `<td>${row.EmployeeNo}</td>
           <td>${row.Username}</td>
-          <td>${row.FullName}</td>
-          <td>${row.Section}</td>
-          <td>${row.UserType}</td>
-        `;
+          <td>${row.FullName}</td>`;
+        
+        tr.addEventListener('click', () => {
+          showDetailTable(row);
+        });
+
         tbody.appendChild(tr);
       });
     })
     .catch(error => console.error('Error fetching data:', error));
+
+  function showDetailTable(row) {
+    const mainTable = document.getElementById('mainTable');
+    const detailTable = document.getElementById('detailTable');
+    const detailTableBody = document.getElementById('detailTableBody');
+    const mainTableBreadcrumb = document.getElementById('mainTableBreadcrumb');
+    const detailTableBreadcrumb = document.getElementById('detailTableBreadcrumb');
+    const employeeFullName = document.getElementById('employeeFullName');
+
+    mainTable.style.display = 'none';
+    detailTable.style.display = 'table';
+    mainTableBreadcrumb.style.display = 'none';
+    detailTableBreadcrumb.style.display = 'inline';
+
+    employeeFullName.textContent = row.FullName;
+
+    detailTableBody.innerHTML = 
+      `<tr>
+        <td>${row.Section}</td>
+        <td>${row.UserType}</td>
+      </tr>`;
+  }
+
+  document.getElementById('backToMainTable').addEventListener('click', () => {
+    const mainTable = document.getElementById('mainTable');
+    const detailTable = document.getElementById('detailTable');
+    const mainTableBreadcrumb = document.getElementById('mainTableBreadcrumb');
+    const detailTableBreadcrumb = document.getElementById('detailTableBreadcrumb');
+
+    mainTable.style.display = 'table';
+    detailTable.style.display = 'none';
+    mainTableBreadcrumb.style.display = 'inline';
+    detailTableBreadcrumb.style.display = 'none';
+  });
 </script>
-
-
-
-
 
 <?php include 'plugins/footer.php'; ?>

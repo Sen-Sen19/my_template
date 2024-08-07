@@ -63,6 +63,15 @@
 
     <nav class="mt-2">
       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+
+      <li class="nav-item">
+                  <a href="account.php" class="nav-link <?php echo ($_SERVER['REQUEST_URI'] == "/my_template/page/admin/account.php") ? 'active' : ''; ?>">
+                  <img src="../../dist/img/account.png" alt="Pagination Icon" class="nav-icon" style="width: 20px; height: 20px;">
+                  <p>Account Management</p>
+                </a>
+              </li>
+
+
         <li class="nav-item">
                   <a href="view.php" class="nav-link <?php echo ($_SERVER['REQUEST_URI'] == "/my_template/page/admin/view.php") ? 'active' : ''; ?>">
                   <img src="../../dist/img/view.png" alt="Pagination Icon" class="nav-icon" style="width: 20px; height: 20px;">
@@ -98,6 +107,49 @@
           <p>Load More</p>
         </a>
       </li>
+
+      <li class="nav-item">
+        <a href="table_switching.php" class="nav-link <?php echo ($_SERVER['REQUEST_URI'] == "/my_template/page/admin/table_switching.php") ? 'active' : ''; ?>">
+        <img src="../../dist/img/switch.png" alt="Pagination Icon" class="nav-icon" style="width: 20px; height: 20px;">
+          <p>Table Switching</p>
+        </a>
+      </li>
+      
+      
+      <li class="nav-item">
+        <a href="checkbox.php" class="nav-link <?php echo ($_SERVER['REQUEST_URI'] == "/my_template/page/admin/checkbox.php") ? 'active' : ''; ?>">
+        <img src="../../dist/img/checkbox.png" alt="Pagination Icon" class="nav-icon" style="width: 20px; height: 20px;">
+          <p>Checkbox</p>
+        </a>
+      </li>
+      
+      
+
+
+      <li class="nav-item">
+        <a href="import.php" class="nav-link <?php echo ($_SERVER['REQUEST_URI'] == "/my_template/page/admin/import.php") ? 'active' : ''; ?>">
+        <img src="../../dist/img/import.png" alt="Pagination Icon" class="nav-icon" style="width: 20px; height: 20px;">
+          <p>Import</p>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="export.php" class="nav-link <?php echo ($_SERVER['REQUEST_URI'] == "/my_template/page/admin/export.php") ? 'active' : ''; ?>">
+        <img src="../../dist/img/export.png" alt="Pagination Icon" class="nav-icon" style="width: 20px; height: 20px;">
+          <p>Export</p>
+        </a>
+      </li>
+
+      
+      <li class="nav-item">
+        <a href="qr.php" class="nav-link <?php echo ($_SERVER['REQUEST_URI'] == "/my_template/page/admin/qr.php") ? 'active' : ''; ?>">
+        <img src="../../dist/img/qr.png" alt="Pagination Icon" class="nav-icon" style="width: 20px; height: 20px;">
+          <p>QR Code</p>
+        </a>
+      </li>
+
+
+
         <li class="nav-item">
   <a href="#" class="nav-link" data-toggle="modal" data-target="#logout_modal">
   <img src="../../dist/img/logout.png" alt="Pagination Icon" class="nav-icon" style="width: 20px; height: 20px;">

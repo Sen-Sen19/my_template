@@ -2,7 +2,6 @@
 <?php include 'plugins/sidebar/admin_bar.php'; ?>
 
 <div class="content-wrapper">
-
   <div class="content-header">
     <div class="container-fluid">
       <div class="row mb-2">
@@ -23,17 +22,25 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="card card-gray-dark card-outline">
-            <div class="card-header">
-              <h3 class="card-title"><i class="fas fa-file-alt"></i> Display Data</h3>
-              <div class="card-tools">
-                <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                  <i class="fas fa-minus"></i>
-                </button>
-                <button type="button" class="btn btn-tool" data-card-widget="maximize">
-                  <i class="fas fa-expand"></i>
-                </button>
-              </div>
-            </div>
+          <div class="card-header">
+  <h3 class="card-title"><i class="fas fa-file-alt"></i> Display Data</h3>
+  <div class="card-tools">
+    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+      <i class="fas fa-minus"></i>
+    </button>
+    <button type="button" class="btn btn-tool" data-card-widget="maximize">
+      <i class="fas fa-expand"></i>
+    </button>
+  </div>
+  <div class="col-sm-3">
+  <label>&nbsp;</label>
+  <form action="../../process/export.php" method="post" id="exportForm">
+    <button type="submit" class="btn btn-primary btn-block btn-sm" id="exportReqBtn">
+      <i class="fas fa-plus mr-2"></i>Export
+    </button>
+  </form>
+</div>
+</div>
             <div class="card-body">
               <div class="row">
                 <div class="col-sm-12 col-md-9 col-9">
@@ -45,11 +52,12 @@
                   <table class="table table-bordered table-hover">
                     <thead>
                       <tr>
-                        <th>Employee No</th>
+                      <th>Employee No</th>
                         <th>Username</th>
                         <th>Full Name</th>
                         <th>Section</th>
                         <th>User Type</th>
+                       
                       </tr>
                     </thead>
                     <tbody id="employeeTableBody">
@@ -65,7 +73,9 @@
   </section>
 </div>
 
+
 <script>
+  // Fetch employee data and populate the table
   fetch('../../process/view_data.php')
     .then(response => response.json())
     .then(data => {
@@ -84,8 +94,18 @@
       });
     })
     .catch(error => console.error('Error fetching data:', error));
-</script>
 
+  // Event listener for the export button
+  document.getElementById('exportReqBtn').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+    const exportForm = document.getElementById('exportForm');
+    
+    // Optionally, you can add any data manipulation here before submitting
+
+    // Submit the form
+    exportForm.submit();
+  });
+</script>
 
 
 
