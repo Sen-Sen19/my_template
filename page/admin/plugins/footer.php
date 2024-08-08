@@ -17,6 +17,8 @@ include '../../modals/confirm_delete_account_selected.php';
 <script src="../../plugins/jquery/dist/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="../../plugins/jquery-ui/jquery-ui.min.js"></script>
+<!--ApexJs -->
+<script src="../../plugins/apexcharts-bundle/dist/apexcharts.min.js"></script>
 <!-- SweetAlert2 -->
 <script type="text/javascript" src="../../plugins/sweetalert2/dist/sweetalert2.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->

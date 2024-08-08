@@ -50,6 +50,7 @@
                         <th>Full Name</th>
                         <th>Section</th>
                         <th>User Type</th>
+                        <th>Checkbox</th>
                       </tr>
                     </thead>
                     <tbody id="employeeTableBody">
@@ -79,6 +80,7 @@
           <td>${row.FullName}</td>
           <td>${row.Section}</td>
           <td>${row.UserType}</td>
+             <td><input type="checkbox" class="employee-checkbox" data-employee-no="${row.EmployeeNo}"></td>
         `;
         tbody.appendChild(tr);
       });

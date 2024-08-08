@@ -148,7 +148,20 @@
         </a>
       </li>
 
+  
+      <li class="nav-item">
+        <a href="chart.php" class="nav-link <?php echo ($_SERVER['REQUEST_URI'] == "/my_template/page/admin/chart.php") ? 'active' : ''; ?>">
+        <img src="../../dist/img/chart.png" alt="Pagination Icon" class="nav-icon" style="width: 20px; height: 20px;">
+          <p>Chart</p>
+        </a>
+      </li>
 
+      <li class="nav-item">
+        <a href="computation.php" class="nav-link <?php echo ($_SERVER['REQUEST_URI'] == "/my_template/page/admin/computation.php") ? 'active' : ''; ?>">
+        <img src="../../dist/img/computation.png" alt="Pagination Icon" class="nav-icon" style="width: 20px; height: 20px;">
+          <p>Computation</p>
+        </a>
+      </li>
 
         <li class="nav-item">
   <a href="#" class="nav-link" data-toggle="modal" data-target="#logout_modal">
