@@ -6,12 +6,10 @@
     </div>
   </footer>
 <?php
+
 //MODALS
 include '../../modals/logout_modal.php';
-include '../../modals/new_account.php';
-include '../../modals/update_account.php';
-include '../../modals/import_accounts.php';
-include '../../modals/confirm_delete_account_selected.php';
+
 ?>              
 <!-- jQuery -->
 <script src="../../plugins/jquery/dist/jquery.min.js"></script>
@@ -35,6 +33,11 @@ include '../../modals/confirm_delete_account_selected.php';
 <script src="../../dist/js/popup_center.js"></script>
 <!-- Serialize -->
 <script src="../../dist/js/serialize.js"></script>
-
+<style>
+  table.table,table.table th,
+  table.table td {
+    border: none;
+  }
+</style>
 </body>
 </html>

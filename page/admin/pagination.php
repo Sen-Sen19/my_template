@@ -1,6 +1,7 @@
 <?php include 'plugins/navbar.php'; ?>
 <?php include 'plugins/sidebar/admin_bar.php'; ?>
 
+
 <div class="content-wrapper">
 
   <div class="content-header">

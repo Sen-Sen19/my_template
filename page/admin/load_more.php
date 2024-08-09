@@ -71,11 +71,11 @@
 </div>
 
 <script>
-let offset = 0; // Starting point for pagination
-const limit = 20; // Number of records to load each time
-let loading = false; // Prevent multiple loads at the same time
+let offset = 0; 
+const limit = 20; 
+let loading = false;
 
-// Function to load data
+
 function loadData() {
   if (loading) return; // If already loading, do nothing
   loading = true;
@@ -98,26 +98,25 @@ function loadData() {
       });
 
       if (data.length > 0) {
-        offset += limit; // Increment offset for the next load
+        offset += limit;
       } else {
         console.log('No more data to load.');
       }
 
-      loading = false; // Reset loading status
+      loading = false;
     })
     .catch(error => {
       console.error('Error fetching data:', error);
-      loading = false; // Reset loading status in case of error
+      loading = false; 
     });
 }
 
-// Initial load
-loadData(); // Load the first set of 20 records
 
-// Infinite scroll event
+loadData(); 
+
 window.addEventListener('scroll', () => {
   if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-    loadData(); // Load more data when scrolled to the bottom
+    loadData();
   }
 });
 
