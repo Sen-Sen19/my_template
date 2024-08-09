@@ -34,7 +34,8 @@
         <div class="col-sm-12">
           <div class="card card-gray-dark card-outline card-shadow">
             <div class="card-header">
-              <h3 class="card-title"><i class="fas fa-file-alt"></i> Display Data</h3>
+            <h3 class="card-title">  <img src="../../dist/img/chart.png" alt="Pagination Icon" class="nav-icon" style="width: 20px; height: 20px;"> Chart</h3>
+
               <div class="card-tools">
                 <button type="button" class="btn btn-tool" data-card-widget="collapse">
                   <i class="fas fa-minus"></i>
@@ -45,7 +46,7 @@
               </div>
             </div>
 
-            <!-- Year and Chart Type Dropdowns -->
+          
             <div class="card-body">
               <div class="row">
                 <div class="col-sm-6">

@@ -23,7 +23,7 @@
         <div class="col-sm-12">
           <div class="card card-gray-dark card-outline">
             <div class="card-header">
-              <h3 class="card-title"><i class="fas fa-file-alt"></i> Display Data</h3>
+            <h3 class="card-title">  <img src="../../dist/img/import.png" alt="Pagination Icon" class="nav-icon" style="width: 20px; height: 20px;"> Import</h3>
               <div class="card-tools">
                 <button type="button" class="btn btn-tool" data-card-widget="collapse">
                   <i class="fas fa-minus"></i>
@@ -35,7 +35,8 @@
               <div class="col-sm-3">
                   <label>&nbsp;</label>
                   <button class="btn btn-block btn-primary" id="addReqBtn" data-toggle="modal" data-target="#addModal">
-  <i class="fas fa-plus mr-2"></i>Import
+  <!-- <i class="fas fa-plus mr-2"></i> -->
+  Import
 </button>
 
 </div>

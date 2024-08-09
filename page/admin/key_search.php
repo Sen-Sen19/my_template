@@ -24,7 +24,7 @@
         <div class="col-sm-12">
           <div class="card card-gray-dark card-outline">
             <div class="card-header">
-              <h3 class="card-title"><i class="fas fa-file-alt"></i> Display Data</h3>
+            <h3 class="card-title">  <img src="../../dist/img/search.png" alt="Pagination Icon" class="nav-icon" style="width: 20px; height: 20px;">Search Key</h3>
               <div class="card-tools">
                 <button type="button" class="btn btn-tool" data-card-widget="collapse">
                   <i class="fas fa-minus"></i>
@@ -98,7 +98,7 @@
     document.getElementById('full_name_search').addEventListener('input', () => search_accounts(1, 0));
     document.getElementById('user_type_search').addEventListener('change', () => search_accounts(1, 0));
 
-    // Trigger initial search to display all data on load
+   
     search_accounts(1, 0);
   });
 

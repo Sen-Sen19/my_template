@@ -30,7 +30,7 @@
         <div class="col-sm-12">
           <div class="card card-gray-dark card-outline">
             <div class="card-header">
-              <h3 class="card-title"><i class="fas fa-file-alt"></i> Display Data</h3>
+            <h3 class="card-title">  <img src="../../dist/img/account.png" alt="Pagination Icon" class="nav-icon" style="width: 20px; height: 20px;"> Account Management</h3>
               <div class="card-tools">
                 <button type="button" class="btn btn-tool" data-card-widget="collapse">
                   <i class="fas fa-minus"></i>

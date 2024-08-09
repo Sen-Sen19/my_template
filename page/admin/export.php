@@ -23,7 +23,8 @@
         <div class="col-sm-12">
           <div class="card card-gray-dark card-outline">
           <div class="card-header">
-  <h3 class="card-title"><i class="fas fa-file-alt"></i> Display Data</h3>
+          <h3 class="card-title">  <img src="../../dist/img/export.png" alt="Pagination Icon" class="nav-icon" style="width: 20px; height: 20px;"> Export</h3>
+
   <div class="card-tools">
     <button type="button" class="btn btn-tool" data-card-widget="collapse">
       <i class="fas fa-minus"></i>
@@ -36,7 +37,8 @@
   <label>&nbsp;</label>
   <form action="../../process/export.php" method="post" id="exportForm">
     <button type="submit" class="btn btn-primary btn-block btn-sm" id="exportReqBtn">
-      <i class="fas fa-plus mr-2"></i>Export
+      <!-- <i class="fas fa-plus mr-2"></i> -->
+      Export
     </button>
   </form>
 </div>

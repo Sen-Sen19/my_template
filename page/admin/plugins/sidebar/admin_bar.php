@@ -6,9 +6,9 @@
 
 .custom-sidebar .nav-link {
   color: black;
-  display: flex; /* Add flex display */
-  align-items: center; /* Center items vertically */
-  padding: 10px; /* Add consistent padding */
+  display: flex;
+  align-items: center; 
+  padding: 10px; 
 }
 
 .custom-sidebar .nav-link.active {
@@ -17,17 +17,17 @@
 }
 
 .custom-sidebar .nav-link.active p {
-  color: white; /* Change text color to white for active link */
+  color: white; 
 }
 
 .custom-sidebar .nav-icon {
   color: black;
-  margin-right: 10px; /* Add margin for spacing between icon and text */
+  margin-right: 10px; 
 }
 
 .custom-sidebar .nav-link p {
-  margin: 0; /* Remove default margins */
-  line-height: 1.5; /* Set a consistent line height */
+  margin: 0; 
+  line-height: 1.5;
 }
 
 .custom-sidebar .sidebar-dark-primary {
@@ -35,11 +35,11 @@
 }
 
 .custom-sidebar .nav-icon {
-  filter: brightness(0); /* Set icon color to black */
+  filter: brightness(0); 
 }
 
 .custom-sidebar .nav-link.active .nav-icon {
-  filter: brightness(1) invert(1); /* Set icon color to white when active */
+  filter: brightness(1) invert(1); 
 }
 
 </style>
