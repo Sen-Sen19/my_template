@@ -85,6 +85,31 @@
       });
     })
     .catch(error => console.error('Error fetching data:', error));
+
+
+//----------------------------------------badge notif---------------------------------
+  //   fetch('../../process/view_data.php')
+  // .then(response => response.json())
+  // .then(data => {
+  //   const tbody = document.getElementById('employeeTableBody');
+  //   const badge = document.getElementById('dataCountBadge'); // Badge element ID
+  //   tbody.innerHTML = '';
+  //   data.data.forEach(row => {
+  //     const tr = document.createElement('tr');
+  //     tr.innerHTML = `
+  //       <td>${row.EmployeeNo}</td>
+  //       <td>${row.Username}</td>
+  //       <td>${row.FullName}</td>
+  //       <td>${row.Section}</td>
+  //       <td>${row.UserType}</td>
+  //     `;
+  //     tbody.appendChild(tr);
+  //   });
+  //   badge.textContent = data.totalRecords; // Set the badge content to the count
+  // })
+  // .catch(error => console.error('Error fetching data:', error));
+
+    
 </script>
 
 

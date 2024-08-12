@@ -41,6 +41,15 @@
 .custom-sidebar .nav-link.active .nav-icon {
   filter: brightness(1) invert(1); 
 }
+.badge-danger {
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  margin-left: 10px;
+  padding: 3px 7px;
+  border-radius: 50%;
+}
+
 
 </style>
 
@@ -71,13 +80,15 @@
                 </a>
               </li>
 
+              <li class="nav-item">
+  <a href="view.php" class="nav-link <?php echo ($_SERVER['REQUEST_URI'] == "/my_template/page/admin/view.php") ? 'active' : ''; ?>">
+    <img src="../../dist/img/view.png" alt="Pagination Icon" class="nav-icon" style="width: 20px; height: 20px;">
+    <p>View Data 
+      <!-- <span id="dataCountBadge" class="badge badge-danger"></span> -------badge notif -----------  -->
+    </p>
+  </a>
+</li>
 
-        <li class="nav-item">
-                  <a href="view.php" class="nav-link <?php echo ($_SERVER['REQUEST_URI'] == "/my_template/page/admin/view.php") ? 'active' : ''; ?>">
-                  <img src="../../dist/img/view.png" alt="Pagination Icon" class="nav-icon" style="width: 20px; height: 20px;">
-                  <p>View Data</p>
-                </a>
-              </li>
               <li class="nav-item">
                   <a href="edit.php" class="nav-link <?php echo ($_SERVER['REQUEST_URI'] == "/my_template/page/admin/edit.php") ? 'active' : ''; ?>">
                   <img src="../../dist/img/edit.png" alt="Pagination Icon" class="nav-icon" style="width: 20px; height: 20px;">
