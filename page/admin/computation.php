@@ -37,6 +37,53 @@
             </div>
 
 
+
+
+            <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif; 
+        }
+       
+        .container {
+            max-width: 500px; 
+            border: 1px solid #dee2e6;
+           
+            padding: 30px; 
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+            margin-bottom: 40px;
+        }
+        .form-control-file {
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff; 
+        }
+        .btn-primary:hover {
+            background-color: #0056b3; 
+            border-color: #0056b3;
+        }
+    </style>
+
+<body class="bg-light">
+    <div class="container mt-5">
+     
+        <form action="../../process/comp_import.php" method="post" enctype="multipart/form-data" class="mt-4">
+            <div class="form-group">
+  
+                <input type="file" class="form-control-file" name="csv_file" accept=".csv" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Import</button>
+        </form>
+    </div>
+
+
+
+      </body>
+
         </div>
         </div>
       </div>

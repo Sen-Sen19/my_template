@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     }],
                     chart: {
                         type: chartType,
-                        height: 350
+                        height: 450
                     },
                     title: {
                         text: 'Monthly Performance'

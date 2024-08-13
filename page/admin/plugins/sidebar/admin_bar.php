@@ -174,6 +174,13 @@
         </a>
       </li>
 
+      <li class="nav-item">
+        <a href="slide.php" class="nav-link <?php echo ($_SERVER['REQUEST_URI'] == "/my_template/page/admin/slide.php") ? 'active' : ''; ?>">
+        <img src="../../dist/img/slide.png" alt="Pagination Icon" class="nav-icon" style="width: 20px; height: 20px;">
+          <p>Slide</p>
+        </a>
+      </li>
+
         <li class="nav-item">
   <a href="#" class="nav-link" data-toggle="modal" data-target="#logout_modal">
   <img src="../../dist/img/logout.png" alt="Pagination Icon" class="nav-icon" style="width: 20px; height: 20px;">

@@ -10,7 +10,7 @@
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="view.php">Home</a></li>
+            <li class="breadcrumb-item"><a href="view.php">Home</a></li>+
             <li class="breadcrumb-item active">Display</li>
           </ol>
         </div>
@@ -37,8 +37,7 @@
   <label>&nbsp;</label>
   <form action="../../process/export.php" method="post" id="exportForm">
     <button type="submit" class="btn btn-primary btn-block btn-sm" id="exportReqBtn">
-      <!-- <i class="fas fa-plus mr-2"></i> -->
-      Export
+       Export
     </button>
   </form>
 </div>
