@@ -14,7 +14,7 @@ while ($row = sqlsrv_fetch_array($stmt, SQLSRV_FETCH_ASSOC)) {
     $data[] = $row;
 }
 
-// Free the statement and close the connection
+
 sqlsrv_free_stmt($stmt);
 sqlsrv_close($conn);
 
