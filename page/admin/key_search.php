@@ -32,9 +32,11 @@
                 <button type="button" class="btn btn-tool" data-card-widget="maximize">
                   <i class="fas fa-expand"></i>
                 </button>
+
               </div>
             </div>
             <div class="card-body">
+              
             <div class="row mb-4">
   <div class="col-sm-3">
     <label>Employee No:</label>
