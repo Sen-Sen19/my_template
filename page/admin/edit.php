@@ -64,6 +64,7 @@
   </section>
 </div>
 
+
 <!-- Modal for editing data -->
 <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -149,7 +150,7 @@
   .then(result => {
     if (result.success) {
       $('#editModal').modal('hide');
-      // Show SweetAlert success message
+
       Swal.fire({
         icon: 'success',
         title: 'Success',
@@ -158,7 +159,7 @@
         timer: 1500
       });
 
-      // Reload data to reflect changes
+      
       fetch('../../process/view_data.php')
         .then(response => response.json())
         .then(data => {

@@ -78,7 +78,7 @@ let loading = false;
 
 function loadData() {
   if (loading) return; // If already loading, do nothing
-  loading = true;
+  loading = false;
 
   fetch(`../../process/load_more_data.php?offset=${offset}`)
     .then(response => response.json())
