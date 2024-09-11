@@ -8,7 +8,6 @@ if (isset($_POST['Login'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    // Update the SQL query to include the 'role' column
     $sql = "SELECT username, role FROM account WHERE username = ? AND password = ?";
     $params = array($username, $password);
     $stmt = sqlsrv_prepare($conn, $sql, $params);
@@ -16,7 +15,7 @@ if (isset($_POST['Login'])) {
     if ($stmt && sqlsrv_execute($stmt)) {
         if (sqlsrv_has_rows($stmt)) {
             $result = sqlsrv_fetch_array($stmt, SQLSRV_FETCH_ASSOC);
-            $role = $result['role']; // Now this will be defined
+            $role = $result['role']; 
             $_SESSION['username'] = $username;
             $_SESSION['password'] = $password;
             $_SESSION['role'] = $role;

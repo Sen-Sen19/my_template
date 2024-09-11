@@ -5,8 +5,7 @@ include 'conn2.php'; // Include your database connection
 $filename = "Employee_data_" . date("Y-m-d") . ".csv";
 
 // Set headers to force download with the generated filename
-header('Content-Type: text/csv');
-header('Content-Disposition: attachment; filename="' . $filename . '"');
+ 
 
 // Open output stream
 $output = fopen('php://output', 'w');
