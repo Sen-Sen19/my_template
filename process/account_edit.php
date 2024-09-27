@@ -1,5 +1,5 @@
 <?php
-include 'conn2.php'; // Include your database connection
+include 'conn2.php'; 
 
 header('Content-Type: application/json');
 

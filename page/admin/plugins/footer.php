@@ -26,7 +26,7 @@ include '../../modals/logout_modal.php';
 <!-- Bootstrap 4 -->
 <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-<script src="../../plugins/bootstrap/js/bootstrap@5.1.3"></script>
+<!-- <script src="../../plugins/bootstrap/js/bootstrap@5.1.3"></script> -->
 <script src="../../plugins/bootstrap/js/jquery-3.6.0.min.js"></script>
 <script src="../../plugins/bootstrap/js/bootstrap@5.1.3.bundle.js"></script>
 

@@ -97,7 +97,7 @@
 
 
 <script>
-// Function to fetch and display employee data
+
 function fetchEmployeeData() {
   fetch('../../process/view_data.php')
     .then(response => response.json())
@@ -119,14 +119,13 @@ function fetchEmployeeData() {
     .catch(error => console.error('Error fetching data:', error));
 }
 
-// Fetch employee data on page load
 document.addEventListener('DOMContentLoaded', fetchEmployeeData);
 
-// Event listener for import form submission
-document.getElementById('importForm').addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevent the default form submission
 
-  const formData = new FormData(this); // Create a FormData object
+document.getElementById('importForm').addEventListener('submit', function(event) {
+  event.preventDefault(); 
+
+  const formData = new FormData(this);
 
   fetch('../../process/import.php', {
     method: 'POST',
@@ -141,9 +140,9 @@ document.getElementById('importForm').addEventListener('submit', function(event)
           icon: 'success',
           confirmButtonText: 'OK'
         });
-        // Refresh the employee data displayed in the table
+
         fetchEmployeeData();
-        // Optionally hide the modal after successful upload
+ 
         $('#addModal').modal('hide');
       } else {
         Swal.fire({
