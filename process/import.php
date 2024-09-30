@@ -55,6 +55,7 @@ if (isset($_FILES['csvFile']) && $_FILES['csvFile']['error'] == 0) {
 } else {
 
     
+    
     $response['success'] = false;
     $response['message'] = 'No file uploaded or there was an error: ' . $_FILES['csvFile']['error'];
 }
