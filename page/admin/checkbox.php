@@ -67,6 +67,7 @@
   </section>
 </div>
 
+
 <script>
   fetch('../../process/view_data.php')
     .then(response => response.json())
