@@ -1,4 +1,4 @@
-<?php
+?php
 include 'conn2.php'; 
 
 
